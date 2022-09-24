@@ -1,11 +1,13 @@
 import Head from "next/head";
+import About from "../components/home/About";
 import Landing from "../components/home/Landing";
+import Projects from "../components/home/Projects";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Hello and welcome - Sujoy kr haldar</title>
+        <title> Its Sujoy kr haldar, Welcome on-board.</title>
         <meta
           name="description"
           content="Hi, I am Sujoy Kr haldar. I design and build beautiful websites for businesses. 
@@ -16,6 +18,8 @@ export default function Home() {
       </Head>
 
       <Landing />
+      <About />
+      <Projects />
     </>
   );
 }
