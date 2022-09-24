@@ -15,7 +15,11 @@ module.exports = {
         "2xl": "12rem", //1536px
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        "black-500": "#1c1c1c",
+      },
+    },
   },
   plugins: [],
 };
