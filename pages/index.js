@@ -3,6 +3,7 @@ import About from "../components/home/About";
 import ArtWorks from "../components/home/ArtWorks";
 import Landing from "../components/home/Landing";
 import Projects from "../components/home/Projects";
+import ToolsTech from "../components/home/ToolsTech";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 
       <Landing />
       <About />
+      {/* <ToolsTech /> */}
       <Projects />
       {/* <ArtWorks /> */}
     </>
