@@ -13,10 +13,6 @@ const navList = [
     name: "Works",
     url: "/projects",
   },
-  {
-    name: "Contact",
-    url: "mailto:sujoykrhaldar@gmail.com",
-  },
 ];
 
 const socialLinks = [
@@ -57,13 +53,18 @@ function Navbar() {
               <Link href={link.url} key={id}>
                 <a
                   className={`hidden md:inline-block ${
-                    router.pathname === link.url ? "font-black" : ""
+                    router.pathname === link.url
+                      ? "font-black underline underline-offset-8"
+                      : ""
                   }`}
                 >
                   {link.name}
                 </a>
               </Link>
             ))}
+            <Link href="mailto:sujoykrhaldar@gmail.com">
+              <a className="hidden md:inline-block font-bold">sujoykrhaldar@gmail.com</a>
+            </Link>
             <div
               onClick={openMenu}
               className="md:hidden text-2xl cursor-pointer p-2 bg-black-500 text-white rounded-lg"
