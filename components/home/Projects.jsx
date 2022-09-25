@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Img from "../tools/Img";
 import ProjectCard from "../tools/ProjectCard";
 
 const projects = [
@@ -83,15 +83,25 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="w-full h-full py-16">
+    <section className="w-full h-full py-24">
+      <div className="absolute w-1/3 h-1/3 top-0 right-0 bg-white -z-10">
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-white z-10"></div>
+        <Img
+          alt="landing pattern"
+          src="/assets/pattern-1.svg"
+          className="opacity-50"
+        />
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-white z-10"></div>
+      </div>
+
       <div className="container">
-        <div className="mb-4">
+        <div className="mb-8">
           <p className="tag">Projects</p>
           <h2 className="my-2">
-            My <span className="font-bold">Latest works</span>
+            My <span className="font-bold">Latest Works</span>
           </h2>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((data) => (
             <ProjectCard data={data} key={data.id} />
           ))}
