@@ -3,7 +3,7 @@ import Img from "./Img";
 
 function ProjectCard({ data }) {
   return (
-    <div className="overflow-hidden p-4 bg-white">
+    <div className="overflow-hidden p-4 bg-white border border-black-500">
       <div className="mt-0 w-auto mx-auto bg-gray-100">
         <Img
           src={data.coverPhoto}

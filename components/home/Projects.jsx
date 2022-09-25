@@ -79,13 +79,53 @@ const projects = [
     ],
     coverPhoto: "/assets/rangwelfarefoundation.png",
   },
+  {
+    id: "5",
+    name: "Hostinger Redesign",
+    url: "https://hostinger-redesign.vercel.app/",
+    status: "Complete",
+    about: "UI redesign of Hostinger.in",
+    role: "Design and development.",
+    stack: [
+      {
+        name: "Figma",
+      },
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Tailwind css",
+      },
+    ],
+    coverPhoto: "/assets/hostinger.png",
+  },
+  {
+    id: "5",
+    name: "Online Education UI",
+    url: "https://on-education.vercel.app/",
+    status: "Complete",
+    about: "UI design of a E-learning site",
+    role: "Design and development.",
+    stack: [
+      {
+        name: "Figma",
+      },
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Tailwind css",
+      },
+    ],
+    coverPhoto: "/assets/online-edu.png",
+  },
 ];
 
 function Projects() {
   return (
     <section
       id="latest-projects"
-      className="w-full h-full py-32 bg-gray-100 z-10"
+      className="w-full h-full pt-32 pb-24 bg-gray-100 z-10"
     >
       <div className="absolute w-1/3 h-1/3 top-0 right-0 -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-gray-100 z-10"></div>
