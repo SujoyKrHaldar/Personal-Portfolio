@@ -100,7 +100,7 @@ function Projects() {
             My <span className="font-bold">Latest Works</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {projects.map((data) => (
             <ProjectCard data={data} key={data.id} />
           ))}
