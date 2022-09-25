@@ -29,8 +29,10 @@ function Landing() {
   return (
     <>
       <section className="w-full h-screen py-16">
-        <div className="overflow-hidden  absolute w-full sm:w-1/3 
-        h-full top-0 right-0 bg-white -z-10">
+        <div
+          className="overflow-hidden  absolute w-full sm:w-1/3 
+        h-full top-0 right-0 bg-white -z-10"
+        >
           <div
             className=" block sm:hidden absolute inset-0 w-full h-full 
           bg-gradient-to-b from-white z-10"
@@ -40,7 +42,6 @@ function Landing() {
             src="/assets/pattern-1.svg"
             className="opacity-30"
           />
-         
         </div>
 
         <div className="container h-full">
