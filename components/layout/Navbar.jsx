@@ -63,7 +63,9 @@ function Navbar() {
               </Link>
             ))}
             <Link href="mailto:sujoykrhaldar@gmail.com">
-              <a className="hidden md:inline-block font-bold">sujoykrhaldar@gmail.com</a>
+              <a className="hidden md:inline-block font-bold">
+                sujoykrhaldar@gmail.com
+              </a>
             </Link>
             <div
               onClick={openMenu}
