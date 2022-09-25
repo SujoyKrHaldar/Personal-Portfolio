@@ -20,10 +20,10 @@ const stack = [
 function About() {
   return (
     <section className="w-full h-full py-16 ">
-      <div className="absolute bg-gray-100 top-0 right-0 h-full w-[90%]"></div>
+      <div className="absolute bg-gray-100 top-0 right-0 h-full w-full xl:w-[90%]"></div>
       <div className="container h-full ">
         <div className="h-full flex items-center">
-          <div className="absolute w-full max-w-[450px] bottom-[-6rem] left-0">
+          <div className="hidden xl:block absolute w-full max-w-[450px] bottom-[-6rem] left-0">
             <Img
               alt="landing pattern"
               src="/assets/character.svg"
@@ -32,7 +32,7 @@ function About() {
               h={350}
             />
           </div>
-          <div className="max-w-2xl ml-auto">
+          <div className="max-w-2xl xl:ml-auto">
             <p className="tag">About me</p>
             <h2 className="my-2">
               A small <span className="font-bold">Introduction</span>
@@ -45,7 +45,7 @@ function About() {
             </p>
 
             <p className="font-bold">What I like to do</p>
-            <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
               {stack.map((data) => (
                 <div key={data.name} className="p-4 space-y-3 bg-white">
                   <p className="font-bold">{data.name}</p>

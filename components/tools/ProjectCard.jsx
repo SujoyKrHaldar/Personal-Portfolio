@@ -20,8 +20,8 @@ function ProjectCard({ data }) {
           </a>
         </Link>
       </div>
-      <div className="m-6 mt-0 w-auto h-[250px] bg-gray-100">
-        <Img src={data.coverPhoto} alt={data.name} />
+      <div className="mt-0 w-auto max-w-[430px] mx-auto bg-gray-100">
+        <Img src={data.coverPhoto} alt={data.name} layout="responsive" w={430} h={230} />
       </div>
     </div>
   );

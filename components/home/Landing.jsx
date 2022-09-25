@@ -29,7 +29,8 @@ function Landing() {
   return (
     <>
       <section className="w-full h-screen py-16">
-        <div className="absolute w-1/3 h-full top-0 right-0 bg-white">
+        <div className=" absolute w-full sm:w-1/3 h-full top-0 right-0 bg-white -z-10">
+          <div className=" block sm:hidden absolute inset-0 w-full h-full bg-gradient-to-b from-white z-10"></div>
           <Img
             alt="landing pattern"
             src="/assets/pattern-1.svg"
@@ -38,17 +39,17 @@ function Landing() {
         </div>
 
         <div className="container h-full">
-          <div className="h-full flex items-center ">
-            <div className="max-w-3xl">
+          <div className="h-full flex items-end sm:items-center ">
+            <div className="max-w-3xl mb-8 sm:mb-0">
               <p className="tag">Hello and welcome</p>
               <h1 className="my-2 text-black-500">
                 I’m Sujoy, <span className="font-bold">UI Designer</span> and{" "}
                 <span className="font-bold">Web Developer.</span>
               </h1>
               <p className="max-w-lg mb-8">
-                I design and build beautiful websites. If you
-                need a modern and powerful website, send me an email. If we are
-                a good fit, I will give you a time and cost estimate.
+                I design and build beautiful websites. If you need a modern and
+                powerful website, send me an email. If we are a good fit, I will
+                give you a time and cost estimate.
               </p>
               <div className="flex gap-3">
                 <Link href="/">
@@ -76,7 +77,7 @@ function Landing() {
               </div>
               <p className="text-base">Keep Scroll</p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2">
               <p className="font-black text-base pr-4">Can follow me on</p>
               {socialLinks.map((link) => (
                 <Link key={link.name} href={link.url}>
