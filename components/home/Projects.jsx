@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProjectCard from "../tools/ProjectCard";
 
 const projects = [
   {
@@ -8,8 +9,18 @@ const projects = [
     status: "Complete",
     about: "Blog website with content management system.",
     role: "Design and development.",
-    stack: "Next.js, Scss, Sanity",
-    coverPhoto: "",
+    stack: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "SCSS",
+      },
+      {
+        name: "Sanity",
+      },
+    ],
+    coverPhoto: "/assets/thelocalfeet.png",
   },
   {
     id: "2",
@@ -18,8 +29,18 @@ const projects = [
     status: "Complete",
     about: "Mental health and life-style.",
     role: "Design and development.",
-    stack: "Next.js, Scss, Sanity",
-    coverPhoto: "",
+    stack: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "SCSS",
+      },
+      {
+        name: "Sanity",
+      },
+    ],
+    coverPhoto: "/assets/mindfullife.png",
   },
   {
     id: "3",
@@ -28,8 +49,18 @@ const projects = [
     status: "Complete",
     about: "Local cake shop.",
     role: "Design and development.",
-    stack: "Next.js, Tailwind css, Sanity",
-    coverPhoto: "",
+    stack: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Tailwind css",
+      },
+      {
+        name: "Sanity",
+      },
+    ],
+    coverPhoto: "/assets/aranyabakeclub.png",
   },
   {
     id: "4",
@@ -38,8 +69,15 @@ const projects = [
     status: "Complete",
     about: "A non-profit organisation.",
     role: "Design and development.",
-    stack: "Next.js, Strapi",
-    coverPhoto: "",
+    stack: [
+      {
+        name: "Next.js",
+      },
+      {
+        name: "Strapi",
+      },
+    ],
+    coverPhoto: "/assets/rangwelfarefoundation.png",
   },
 ];
 
@@ -47,15 +85,15 @@ function Projects() {
   return (
     <section className="w-full h-full py-16">
       <div className="container">
-        <div className="max-w-3xl">
+        <div className="mb-4">
           <p className="tag">Projects</p>
-          <h2>My latest works</h2>
+          <h2 className="my-2">
+            My <span className="font-bold">Latest works</span>
+          </h2>
         </div>
-        <div className="">
+        <div className="grid grid-cols-2 gap-4">
           {projects.map((data) => (
-            <div key={data.id} className="">
-              <h2>{data.name}</h2>
-            </div>
+            <ProjectCard data={data} key={data.id} />
           ))}
         </div>
       </div>
