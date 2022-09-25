@@ -3,19 +3,13 @@ import Img from "./Img";
 
 function ProjectCard({ data }) {
   return (
-    <div className="overflow-hidden p-4 bg-white border border-black-500">
-      <div className="mt-0 w-auto mx-auto bg-gray-100">
-        <Img
-          src={data.coverPhoto}
-          alt={data.name}
-          layout="responsive"
-          w={430}
-          h={230}
-        />
+    <div className="group overflow-hidden w-full h-[420px] border-2 border-black bg-white flex items-end">
+      <div className="group-hover:scale-105 duration-500 absolute w-full h-full mx-auto">
+        <Img src={data.coverPhoto} alt={data.name} />
       </div>
-      <div className="py-4">
-        <p className="text-sm">{data.role}</p>
-        <p className="font-bold text-xl my-1">{data.name}</p>
+      <p className="absolute top-4 left-4 p-1 px-4 bg-white rounded-full text-xs font-bold">{data.role}</p>
+      <div className="p-6 w-full bg-gradient-to-r from-white via-white">
+        <p className="font-black text-2xl my-1">{data.name}</p>
         <p className="text-sm mb-4">{data.about}</p>
         <Link href={data.url}>
           <a target="_blank" className="text-sm font-bold">

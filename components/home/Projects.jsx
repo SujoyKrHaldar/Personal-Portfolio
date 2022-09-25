@@ -20,7 +20,7 @@ const projects = [
         name: "Sanity",
       },
     ],
-    coverPhoto: "/assets/thelocalfeet.png",
+    coverPhoto: "/assets/thelocalfeet-design.png",
   },
   {
     id: "2",
@@ -40,7 +40,7 @@ const projects = [
         name: "Sanity",
       },
     ],
-    coverPhoto: "/assets/mindfullife.png",
+    coverPhoto: "/assets/mindfullife-design.png",
   },
   {
     id: "3",
@@ -60,7 +60,7 @@ const projects = [
         name: "Sanity",
       },
     ],
-    coverPhoto: "/assets/aranyabakeclub.png",
+    coverPhoto: "/assets/aranyabakeclub-design.png",
   },
   {
     id: "4",
@@ -77,7 +77,7 @@ const projects = [
         name: "Strapi",
       },
     ],
-    coverPhoto: "/assets/rangwelfarefoundation.png",
+    coverPhoto: "/assets/rangwelfarefoundation-design.png",
   },
   {
     id: "5",
@@ -85,7 +85,7 @@ const projects = [
     url: "https://hostinger-redesign.vercel.app/",
     status: "Complete",
     about: "UI redesign of Hostinger.in",
-    role: "Design and development.",
+    role: "Re-design and development.",
     stack: [
       {
         name: "Figma",
@@ -97,7 +97,7 @@ const projects = [
         name: "Tailwind css",
       },
     ],
-    coverPhoto: "/assets/hostinger.png",
+    coverPhoto: "/assets/hostinger-redesign.png",
   },
   {
     id: "5",
@@ -117,7 +117,7 @@ const projects = [
         name: "Tailwind css",
       },
     ],
-    coverPhoto: "/assets/online-edu.png",
+    coverPhoto: "/assets/online-education-design.png",
   },
 ];
 
@@ -140,7 +140,7 @@ function Projects() {
             My <span className="font-bold">Latest Works</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((data) => (
             <ProjectCard data={data} key={data.id} />
           ))}

@@ -28,6 +28,10 @@ const socialLinks = [
     name: "Linkedin",
     url: "https://www.linkedin.com/in/sujoy-kumar-haldar-31713b1a4/",
   },
+  {
+    name: "Github",
+    url: "https://github.com/SujoyKrHaldar",
+  },
 ];
 
 function Navbar() {
@@ -79,8 +83,8 @@ function Navbar() {
 
       <section className="w-screen p-3 h-full fixed top-0 right-0 z-50 overflow-hidden pointer-events-none flex items-center justify-end">
         <div
-          className={`flex-1 p-16 h-full max-w-[500px] bg-black-500 text-white
-          flex items-center justify-start pointer-events-auto duration-300 
+          className={`flex-1 p-24 h-full max-w-[500px] bg-black-500 text-white
+          flex items-center justify-start pointer-events-auto duration-300 rounded-l-3xl
           ${
             isOpen
               ? " translate-x-0 opacity-100 duration-200"

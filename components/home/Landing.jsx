@@ -4,6 +4,7 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillLinkedin,
+  AiFillGithub,
 } from "react-icons/ai";
 import { CgArrowsScrollV } from "react-icons/cg";
 
@@ -22,6 +23,11 @@ const socialLinks = [
     name: "Linkedin",
     url: "https://www.linkedin.com/in/sujoy-kumar-haldar-31713b1a4/",
     icon: <AiFillLinkedin />,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/SujoyKrHaldar",
+    icon: <AiFillGithub />,
   },
 ];
 

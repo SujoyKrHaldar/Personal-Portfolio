@@ -3,6 +3,7 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillLinkedin,
+  AiFillGithub,
 } from "react-icons/ai";
 
 const socialLinks = [
@@ -21,6 +22,11 @@ const socialLinks = [
     url: "https://www.linkedin.com/in/sujoy-kumar-haldar-31713b1a4/",
     icon: <AiFillLinkedin />,
   },
+  {
+    name: "Github",
+    url: "https://github.com/SujoyKrHaldar",
+    icon: <AiFillGithub />,
+  },
 ];
 
 function Footer() {
@@ -31,8 +37,10 @@ function Footer() {
         <div className="pt-6 pb-0 md:py-6">
           <div className="hidden lg:block absolute w-[90%] h-full top-0 right-0 bg-black-500"></div>
 
-          <div className="container space-y-3 block md:space-y-0 md:flex items-end justify-between gap-4 
-          text-black lg:text-white">
+          <div
+            className="container space-y-3 block md:space-y-0 md:flex items-end justify-between gap-4 
+          text-black lg:text-white"
+          >
             <div className="">
               <p className="text-sm">Something in mind</p>
               <h2 className="font-bold">Lets talk</h2>
@@ -47,7 +55,9 @@ function Footer() {
               </a>
             </div>
             <div className="space-y-1">
-              <p className="text-base text-left md:text-right font-bold">Can follow me on</p>
+              <p className="text-base text-left md:text-right font-bold">
+                Can follow me on
+              </p>
               <div className="flex items-center md:justify-end gap-2">
                 {socialLinks.map((link) => (
                   <Link key={link.name} href={link.url}>
