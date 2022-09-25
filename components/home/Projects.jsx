@@ -7,7 +7,7 @@ const projects = [
     name: "The localfeet",
     url: "https://thelocalfeet.com",
     status: "Complete",
-    about: "Blog website with content management system.",
+    about: "Personal travel blog.",
     role: "Design and development.",
     stack: [
       {
@@ -83,15 +83,14 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="latest-projects" className="w-full h-full py-24">
-      <div className="absolute w-1/3 h-1/3 top-0 right-0 bg-white -z-10">
-        <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-white z-10"></div>
-        <Img
-          alt="landing pattern"
-          src="/assets/pattern-1.svg"
-          className="opacity-50"
-        />
-        <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-white z-10"></div>
+    <section
+      id="latest-projects"
+      className="w-full h-full py-32 bg-gray-100 z-10"
+    >
+      <div className="absolute w-1/3 h-1/3 top-0 right-0 -z-10">
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-gray-100 z-10"></div>
+        <Img alt="landing pattern" src="/assets/pattern-1.svg" />
+        <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-gray-100 z-10"></div>
       </div>
 
       <div className="container">
@@ -101,7 +100,7 @@ function Projects() {
             My <span className="font-bold">Latest Works</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {projects.map((data) => (
             <ProjectCard data={data} key={data.id} />
           ))}
