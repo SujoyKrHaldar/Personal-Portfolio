@@ -52,7 +52,7 @@ function Landing() {
                 give you a time and cost estimate.
               </p>
               <div className="flex gap-3">
-                <Link href="/">
+                <Link href="#latest-projects">
                   <a className="bg-black-500 rounded-lg text-white inline-block py-3 px-7">
                     See my works
                   </a>

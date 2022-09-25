@@ -83,7 +83,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="w-full h-full py-24">
+    <section id="latest-projects" className="w-full h-full py-24">
       <div className="absolute w-1/3 h-1/3 top-0 right-0 bg-white -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-white z-10"></div>
         <Img

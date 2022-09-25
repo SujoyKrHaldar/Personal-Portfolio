@@ -25,17 +25,18 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: "Oxygen", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   font-size: 100%;
 }
 
-@media screen and (max-width:1024px) {
-  html{
+@media screen and (max-width: 1024px) {
+  html {
     font-size: 90%;
   }
 }
 
-@media screen and (max-width:768px) {
-  html{
+@media screen and (max-width: 768px) {
+  html {
     font-size: 80%;
   }
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
+import PageTransition from "../components/tools/PageTransition";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -8,9 +9,12 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+
+      <PageTransition>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </PageTransition>
     </>
   );
 }
