@@ -71,7 +71,7 @@ function Landing() {
               </p>
               <div className="flex gap-3">
                 <Link href="#latest-projects">
-                  <a className="bg-black-500 rounded-lg text-white inline-block py-5 px-9 sm:py-3 sm:px-7">
+                  <a className="bg-black-500 rounded-xl lg:rounded-lg text-white inline-block py-5 px-9 lg:py-3 lg:px-7">
                     See my works
                   </a>
                 </Link>
@@ -79,7 +79,7 @@ function Landing() {
                 <Link href="/Resume_sujoyKrHaldar.pdf">
                   <a
                     target="_blank"
-                    className="bg-white rounded-lg sm:bg-gray-200 inline-block py-5 px-9 sm:py-3 sm:px-7 font-bold"
+                    className="bg-white rounded-xl lg:rounded-lg sm:bg-gray-200 inline-block py-5 px-9 lg:py-3 lg:px-7 font-bold"
                   >
                     My Resume
                   </a>

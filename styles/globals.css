@@ -37,14 +37,16 @@ body {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 73%;
+    font-size: 75%;
   }
 }
+
 @media screen and (max-width: 640px) {
   html {
     font-size: 70%;
   }
 }
+
 
 ::-webkit-scrollbar {
   width: 10px;

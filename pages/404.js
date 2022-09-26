@@ -21,7 +21,7 @@ function pageNotFound() {
         </div>
 
         <div className="container h-full">
-          <div className="h-full flex items-end sm:items-center ">
+          <div className="h-full flex items-center ">
             <div className="max-w-3xl mb-8 sm:mb-0">
               <p className="tag">404</p>
               <h1 className="my-2 text-black-500 font-black">Page not found</h1>
@@ -30,12 +30,12 @@ function pageNotFound() {
               </p>
               <div className="flex gap-3">
                 <Link href="/">
-                  <a className="bg-black-500 rounded-lg text-white inline-block py-3 px-7">
+                  <a className="bg-black-500 rounded-xl lg:rounded-lg text-white inline-block py-5 px-9 md:py-3 md:px-7">
                     Go home
                   </a>
                 </Link>
                 <Link href="/projects">
-                  <a className="bg-gray-100 rounded-lg inline-block py-3 px-7 font-bold">
+                  <a className="bg-white rounded-xl lg:rounded-lg sm:bg-gray-200 inline-block py-5 px-9 md:py-3 md:px-7 font-bold">
                     See my Works
                   </a>
                 </Link>
