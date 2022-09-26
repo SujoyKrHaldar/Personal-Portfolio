@@ -35,7 +35,7 @@ function Footer() {
       <footer className="mt-auto pt-8 pb-2">
         <div className="hidden lg:block absolute w-full h-1/3 inset-0 bg-gray-100"></div>
         <div className="pt-6 pb-0 md:py-6">
-          <div className="hidden lg:block absolute w-[90%] h-full top-0 right-0 bg-black-500"></div>
+          <div className="hidden lg:block absolute w-[95%] h-full top-0 right-0 bg-black-500"></div>
 
           <div
             className="container space-y-3 block md:space-y-0 md:flex items-end justify-between gap-4 

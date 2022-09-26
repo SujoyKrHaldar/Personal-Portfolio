@@ -26,7 +26,8 @@ const stack = [
 function About() {
   return (
     <section className="w-full h-full py-16 ">
-      <div className="absolute bg-gray-100 top-0 right-0 h-full w-full xl:w-[90%]"></div>
+      <div className="absolute bg-gray-100 top-0 right-0 h-full w-full xl:w-[95%]"></div>
+
       <div className="container h-full ">
         <div className="h-full flex items-center">
           <h1
