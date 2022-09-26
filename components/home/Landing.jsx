@@ -36,11 +36,11 @@ function Landing() {
     <>
       <section className="w-full h-screen py-16">
         <div
-          className="overflow-hidden  absolute w-full sm:w-1/3 
+          className="overflow-hidden  absolute w-full sm:w-1/3
         h-full top-0 right-0 bg-white -z-10"
         >
           <div
-            className=" block sm:hidden absolute inset-0 w-full h-full 
+            className=" block sm:hidden absolute inset-0 w-full h-[70%]
           bg-gradient-to-b from-white z-10"
           ></div>
           <Img
@@ -54,9 +54,15 @@ function Landing() {
           <div className="h-full flex items-end sm:items-center ">
             <div className="max-w-3xl mb-8 sm:mb-0">
               <p className="tag">Hello and welcome</p>
-              <h1 className="my-2 text-black-500">
-                I’m Sujoy, <span className="font-bold">UI Designer</span> and{" "}
-                <span className="font-bold">Web Developer.</span>
+              <h1
+                className="
+             my-2 text-black-500"
+              >
+                I’m Sujoy,{" "}
+                <span className="block sm:inline">
+                  <span className="font-bold">UI Designer</span> and{" "}
+                  <span className="font-bold">Web Developer.</span>
+                </span>
               </h1>
               <p className="max-w-lg mb-8">
                 I design and build beautiful websites. If you need a modern and
@@ -65,7 +71,7 @@ function Landing() {
               </p>
               <div className="flex gap-3">
                 <Link href="#latest-projects">
-                  <a className="bg-black-500 rounded-lg text-white inline-block py-3 px-7">
+                  <a className="bg-black-500 rounded-lg text-white inline-block py-5 px-9 sm:py-3 sm:px-7">
                     See my works
                   </a>
                 </Link>
@@ -73,7 +79,7 @@ function Landing() {
                 <Link href="/Resume_sujoyKrHaldar.pdf">
                   <a
                     target="_blank"
-                    className="bg-gray-100 rounded-lg inline-block py-3 px-7 font-bold"
+                    className="bg-white rounded-lg sm:bg-gray-200 inline-block py-5 px-9 sm:py-3 sm:px-7 font-bold"
                   >
                     My Resume
                   </a>

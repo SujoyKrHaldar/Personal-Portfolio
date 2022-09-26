@@ -73,7 +73,7 @@ function Navbar() {
             </Link>
             <div
               onClick={openMenu}
-              className="md:hidden text-2xl cursor-pointer p-2 bg-black-500 text-white rounded-lg"
+              className="md:hidden text-4xl cursor-pointer p-3 bg-black-500 text-white rounded-xl"
             >
               <CgMenuRight />
             </div>
@@ -84,7 +84,7 @@ function Navbar() {
       <section className="w-screen p-3 h-full fixed top-0 right-0 z-50 overflow-hidden pointer-events-none flex items-center justify-end">
         <div
           className={`flex-1 p-24 h-full max-w-[500px] bg-black-500 text-white
-          flex items-center justify-start pointer-events-auto duration-300 rounded-l-3xl
+          flex items-center justify-start pointer-events-auto duration-300 rounded-3xl
           ${
             isOpen
               ? " translate-x-0 opacity-100 duration-200"
@@ -95,7 +95,7 @@ function Navbar() {
         >
           <div
             onClick={() => setOpen(false)}
-            className="absolute z-10 p-1 bg-black text-white rounded-lg top-5 right-5 cursor-pointer text-3xl"
+            className="absolute z-10 text-4xl p-2 bg-white text-black-500 rounded-xl top-5 right-5 cursor-pointer"
           >
             <MdOutlineClose />
           </div>

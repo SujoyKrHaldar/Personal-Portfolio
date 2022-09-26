@@ -17,6 +17,9 @@ function Img({ src, alt, className = "", w, h, layout, position, objFit }) {
       className={`${className} duration-1000
               ${isLoading ? "opacity-0" : ""}`}
       onLoadingComplete={() => setLoading(false)}
+      onDragStart={(e) => {
+        e.preventDefault();
+      }}
     />
   );
 }

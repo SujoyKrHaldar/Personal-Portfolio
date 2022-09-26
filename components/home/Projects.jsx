@@ -100,7 +100,7 @@ const projects = [
     coverPhoto: "/assets/hostinger-redesign.png",
   },
   {
-    id: "5",
+    id: "6",
     name: "Online Education UI",
     url: "https://on-education.vercel.app/",
     status: "Complete",

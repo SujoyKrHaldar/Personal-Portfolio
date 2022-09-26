@@ -5,7 +5,7 @@ function PageTransition({ children }) {
   const router = useRouter();
 
   return (
-    <AnimatePresence exitBeforeEnter initial={false}>
+    <AnimatePresence mode="wait" initial={false}>
       <motion.div
         key={router.route}
         initial={{ opacity: 0 }}
