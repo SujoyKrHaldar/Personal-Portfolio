@@ -1,4 +1,4 @@
-![Cover](/public/preview/landingpage.png)
+![Cover](/public/preview/Thumbnail.png)
 
 # Sujoy Kumar Haldar - Portfolio
 
@@ -8,4 +8,4 @@ Personal website - Build with Next.js, Tailwind css.
 
 ### Preview
 
-![Full preview](/public/preview/fullpage.png)
+![Full preview](/public/preview/preview.png)
