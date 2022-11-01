@@ -68,8 +68,6 @@ function Landing() {
                 I design and build beautiful websites. I have been passionate
                 about frontend design & development since my college days. Also
                 I like spend my leisure time painting.
-                {/* If you need a modern and powerful website, send me an email. If we are
-                a good fit, I will give you a time and cost estimate. */}
               </p>
               <div className="flex gap-3">
                 <Link href="#latest-projects">
@@ -78,7 +76,7 @@ function Landing() {
                   </a>
                 </Link>
 
-                <Link href="Resume_sujoyKrHaldar.pdf">
+                <Link href="/myResume.pdf">
                   <a
                     target="_blank"
                     className="bg-white rounded-xl lg:rounded-lg sm:bg-gray-200 md:hover:bg-gray-300
