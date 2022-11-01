@@ -1,7 +1,9 @@
 import Head from "next/head";
 import About from "../components/home/About";
+import Achievements from "../components/home/Achievements";
 import ArtWorks from "../components/home/ArtWorks";
 import Landing from "../components/home/Landing";
+import PersonalWorks from "../components/home/PersonalWorks";
 import Projects from "../components/home/Projects";
 import ToolsTech from "../components/home/ToolsTech";
 
@@ -22,7 +24,9 @@ export default function Home() {
       <About />
       <ToolsTech />
       <Projects />
-      {/* <ArtWorks /> */}
+      <PersonalWorks />
+      <Achievements />
+      <ArtWorks />
     </>
   );
 }

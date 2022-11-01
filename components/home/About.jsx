@@ -57,14 +57,8 @@ function About() {
             <p className=" mb-4">
               This is Sujoy Kumar Haldar, 2021 passout hold Computer science
               Engineering from Kalyani Government Engineering College, West
-              Bengal, India. I have been passionate about UI/UX design and
-              fullstack development since my early college days. Also I like
-              spend my leisure time painting.
-            </p>
-
-            <p className="mb-4">
-              Currently working in Capgemini as an Software analyst. But I am
-              Still learning lot of things in design and development.
+              Bengal, India. Also I am a selft taught UI designer and Frontend
+              developer. Also I like spend my leisure time painting.
             </p>
 
             <p className="font-bold">What I like to do</p>

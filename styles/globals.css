@@ -47,7 +47,6 @@ body {
   }
 }
 
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -88,6 +87,10 @@ h2 {
   line-height: 3.5rem;
 }
 
+h3 {
+  font-size: 1.7rem;
+}
+
 p {
   font-size: 1.2rem;
 }
@@ -107,4 +110,5 @@ p {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: 0.2s ease-in;
 }

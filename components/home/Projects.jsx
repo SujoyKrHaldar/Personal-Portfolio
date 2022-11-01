@@ -3,21 +3,41 @@ import ProjectCard from "../tools/ProjectCard";
 
 const projects = [
   {
+    id: "6",
+    name: "Via Pontium",
+    isComplete: false,
+    about: "Service portfolio.",
+    role: "Design and development.",
+    links: [],
+    coverPhoto: "/assets/viapontium-design.png",
+  },
+  {
+    id: "5",
+    name: "Normalized nerd",
+    isComplete: false,
+    about: "Personal portfolio",
+    role: "Design and development.",
+    links: [
+      {
+        id: "1",
+        name: "Demo url",
+        url: "https://normalizednerd.vercel.app",
+      },
+    ],
+    coverPhoto: "/assets/normalizednerd-design.png",
+  },
+
+  {
     id: "1",
     name: "The localfeet",
-    url: "https://thelocalfeet.com",
-    status: "Complete",
+    isComplete: true,
     about: "Personal travel blog.",
     role: "Design and development.",
-    stack: [
+    links: [
       {
-        name: "Next.js",
-      },
-      {
-        name: "SCSS",
-      },
-      {
-        name: "Sanity",
+        id: "1",
+        name: "Live url",
+        url: "https://thelocalfeet.com",
       },
     ],
     coverPhoto: "/assets/thelocalfeet-design.png",
@@ -25,19 +45,14 @@ const projects = [
   {
     id: "2",
     name: "The Mindful life",
-    url: "https://mindfullife.in",
-    status: "Complete",
+    isComplete: true,
     about: "Mental health and life-style.",
     role: "Design and development.",
-    stack: [
+    links: [
       {
-        name: "Next.js",
-      },
-      {
-        name: "SCSS",
-      },
-      {
-        name: "Sanity",
+        id: "1",
+        name: "Live url",
+        url: "https://mindfullife.in",
       },
     ],
     coverPhoto: "/assets/mindfullife-design.png",
@@ -45,19 +60,14 @@ const projects = [
   {
     id: "3",
     name: "Aranya bake club",
-    url: "https://aranyabakeclub.in",
-    status: "Complete",
+    isComplete: true,
     about: "Local cake shop.",
     role: "Design and development.",
-    stack: [
+    links: [
       {
-        name: "Next.js",
-      },
-      {
-        name: "Tailwind css",
-      },
-      {
-        name: "Sanity",
+        id: "1",
+        name: "Live url",
+        url: "https://aranyabakeclub.in",
       },
     ],
     coverPhoto: "/assets/aranyabakeclub-design.png",
@@ -65,59 +75,17 @@ const projects = [
   {
     id: "4",
     name: "Rang welfare foundation",
-    url: "https://rangwelfarefoundation.com",
-    status: "Complete",
+    isComplete: true,
     about: "A non-profit organisation.",
     role: "Design and development.",
-    stack: [
+    links: [
       {
-        name: "Next.js",
-      },
-      {
-        name: "Strapi",
+        id: "1",
+        name: "Live url",
+        url: "https://rangwelfarefoundation.com",
       },
     ],
     coverPhoto: "/assets/rangwelfarefoundation-design.png",
-  },
-  {
-    id: "5",
-    name: "Hostinger Redesign",
-    url: "https://hostinger-redesign.vercel.app/",
-    status: "Complete",
-    about: "UI redesign of Hostinger.in",
-    role: "Re-design and development.",
-    stack: [
-      {
-        name: "Figma",
-      },
-      {
-        name: "Next.js",
-      },
-      {
-        name: "Tailwind css",
-      },
-    ],
-    coverPhoto: "/assets/hostinger-redesign.png",
-  },
-  {
-    id: "6",
-    name: "Online Education UI",
-    url: "https://on-education.vercel.app/",
-    status: "Complete",
-    about: "UI design of a E-learning site",
-    role: "Design and development.",
-    stack: [
-      {
-        name: "Figma",
-      },
-      {
-        name: "Next.js",
-      },
-      {
-        name: "Tailwind css",
-      },
-    ],
-    coverPhoto: "/assets/online-education-design.png",
   },
 ];
 
@@ -129,7 +97,11 @@ function Projects() {
     >
       <div className="absolute w-1/3 h-1/3 top-0 right-0 -z-10">
         <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-gray-100 z-10"></div>
-        <Img alt="landing pattern" src="/assets/pattern-1.svg" />
+        <Img
+          alt="landing pattern"
+          src="/assets/pattern-1.svg"
+          className="opacity-40"
+        />
         <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-gray-100 z-10"></div>
       </div>
 
