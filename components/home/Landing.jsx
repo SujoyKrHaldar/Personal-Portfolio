@@ -78,7 +78,7 @@ function Landing() {
                   </a>
                 </Link>
 
-                <Link href="/Resume_sujoyKrHaldar.pdf">
+                <Link href="Resume_sujoyKrHaldar.pdf">
                   <a
                     target="_blank"
                     className="bg-white rounded-xl lg:rounded-lg sm:bg-gray-200 md:hover:bg-gray-300
