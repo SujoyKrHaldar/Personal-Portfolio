@@ -3,6 +3,48 @@ import ProjectCard from "../tools/ProjectCard";
 
 const projects = [
   {
+    id: "4",
+    name: "MovieDB",
+    role: "API integration",
+    isComplete: false,
+    links: [
+      {
+        id: "1",
+        name: "Live url",
+        url: "https://next-movie-finder.vercel.app/",
+      },
+      {
+        id: "2",
+        name: "Source code",
+        url: "https://github.com/SujoyKrHaldar/Next-Movie-App",
+      },
+    ],
+    about: "A movie searching application using Next.js Serverside rendering.",
+    coverPhoto: "/assets/moviedb-design.png",
+  },
+
+  {
+    id: "6",
+    name: "Cados-dev",
+    role: "API integration",
+    isComplete: true,
+    links: [
+      {
+        id: "1",
+        name: "Live url",
+        url: "https://cados-dev.vercel.app/",
+      },
+      {
+        id: "2",
+        name: "Source code",
+        url: "https://github.com/SujoyKrHaldar/Cados.dev",
+      },
+    ],
+    about: "Collaboration site demo template with realtime API.",
+    coverPhoto: "/assets/cados.dev-design.png",
+  },
+
+  {
     id: "1",
     name: "Hostinger Redesign",
     role: "Redesign and development",
@@ -46,27 +88,6 @@ const projects = [
     links: [],
     about: "You already saw it.",
     coverPhoto: "/assets/myportfolio-design.png",
-  },
-
-  {
-    id: "4",
-    name: "MovieDB",
-    role: "API integration",
-    isComplete: false,
-    links: [
-      {
-        id: "1",
-        name: "Live url",
-        url: "https://next-movie-finder.vercel.app/",
-      },
-      {
-        id: "2",
-        name: "Source code",
-        url: "https://github.com/SujoyKrHaldar/Next-Movie-App",
-      },
-    ],
-    about: "A movie searching application using Next.js Serverside rendering.",
-    coverPhoto: "/assets/moviedb-design.png",
   },
 
   {

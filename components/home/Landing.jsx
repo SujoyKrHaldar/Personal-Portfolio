@@ -61,7 +61,7 @@ function Landing() {
                 I’m Sujoy,{" "}
                 <span className="block sm:inline">
                   <span className="font-bold">UI Designer</span> and{" "}
-                  <span className="font-bold">Web Developer.</span>
+                  <span className="font-bold">Frontend Developer.</span>
                 </span>
               </h1>
               <p className="max-w-xl mb-8">
